@@ -1,0 +1,127 @@
+* {
+    /*Begin citation for https://www.quora.com/When-should-I-use-box-sizing-border-box-as-opposed-to-content-box*/
+    box-sizing: border-box;
+    /*end citation*/
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+}
+
+body {
+    background-color: #363c3f;
+    display: flex;
+    /*Begin citation for https://www.smashingmagazine.com/2019/03/css-alignment/*/
+    justify-content: center;
+    align-items: center;
+    /*end citation*/
+    min-height: 150vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left_container {
+    /*Begin citation for https://developer.mozilla.org/en-US/docs/Web/CSS/flex*/
+    flex: 1;
+    /*end citation*/
+    margin-right: 20px;
+}
+
+.right_container {
+    /*Begin citation for https://developer.mozilla.org/en-US/docs/Web/CSS/flex*/
+    flex: 3;
+    /*end citation*/
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    max-width: 800px;
+    background-color: #2f3136;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.user_input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: #1e1e1e;
+    border: 0;
+    width: 100%;
+}
+
+.button {
+    border-radius:6px;
+    border: none;
+    cursor:pointer;
+    background: #7289da;
+    color:white;
+    /*Begin citation for https://stackoverflow.com/questions/19469495/css-slow-hover-effect*/
+    transition: all .4s ease;
+    /*end citation*/
+}
+
+.button:hover {
+    background:#475764;
+    color: white;
+}
+
+.chatlog {
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    padding: 15px;
+    height: 400px;
+    /*Begin citation for https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap*/
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    /*end citation*/
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.lists {
+    list-style-type: none;
+    background-color: #202225;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.list{
+    /*Begin citation for https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type*/
+    list-style-type: none;
+    /*end citation*/
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.sendButton{
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.sendMessage {
+    margin-right: 10px;
+    width: 95%;
+}
+
+.message_input{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
